@@ -135,11 +135,15 @@ li:hover {
 }
 
 .pre-title {
-    margin: 5.2rem 2rem;
+    margin: 5.2rem 2rem 3.5rem;
 }
 
 .circles img {
-    margin-right: -2rem;
+    margin-right: -1.1rem;
+    border-radius: 50%;
+    border: 3px solid var(--theme-color);
+    width: 2.4rem;
+    height: 2.4rem;
 
 }
 
