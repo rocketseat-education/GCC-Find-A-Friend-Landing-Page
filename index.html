@@ -8,6 +8,10 @@
     <title>FindAFriend</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <script src="./script.js" defer></script>
 </head>
 <body>
@@ -87,5 +91,63 @@
             <img src="./assets/img-app.png" alt="" id="app-desktop">
         </div>
     </section>
+    <section id="friends">
+        <div class="container">
+            <div class="friends-content">
+                <h2>Há muitos amigos esperando por você!</h2>
+                <p>
+                    O FiendAFriend conecta pessoas que estão procurando por um animal de estimação com animais que precisam de um lar amoroso. É fácil de usar e você pode navegar por uma variedade de animais para encontrar aquele que melhor se adapta ao seu estilo de vida e necessidades.
+                </p>
+                <a href="#">Acesse agora</a>
+                
+                <div class="slider">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="./assets/slide-1.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/slide-2.png" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assets/slide-3.png" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next" id="btn-next">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 6L15 12L9 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-prev" id="btn-prev">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 10,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+        });
+    </script>
 </body>
 </html>
